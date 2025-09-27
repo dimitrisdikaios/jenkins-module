@@ -28,7 +28,7 @@ pipeline{
         stage("build docker image"){
             steps {
                 script{
-                    buildImage()
+                    buildImage 'dimitrisdikaios/demo-app:jma-3.0'
                 }
             }
         }
